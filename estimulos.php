@@ -135,14 +135,71 @@
                                                 </div>
                                             </div>
 
+
+
+
+
                                             <div class="btn btn-secondary border-light" id="subheader3">
                                                 <a class="btn btn-block" data-toggle="collapse" data-target="#subcollapse3" aria-expanded="true" aria-controls="subcollapse3">Capacitación y Actualización en Lenguas Extranjeras</a>
                                             </div>
                                             <div id="subcollapse3" class="collapse" aria-labelledby="subheader1" data-parent="#subaccordion">
                                                 <div class="card-body">
-                                                    
+                                                    <div class="form-group">
+                                                            <div class="row">
+                                                                <div class="col-9">
+                                                                    <h4>Capacitación y Actualización en Lenguas Extranjeras</h4> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    <div class="col-2">
+
+                                                        <!-- BOTON AGREGAR -->
+                                                        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario3" onclick="validarCapaActa()">Agregar nuevo</button><br><br>
+
+                                                        <!-- VENTANA PARA LOS FORMULARIOS DE LA SECCION PRODUCCION ACADEMICA DOCENCIA -->
+                                                        <div class="modal fade" id="ventanaFormulario3" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario3">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content" id="ventanaCapaActa">
+                                                                </div>
+                                                            </div>       
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!-- TABLAS DONDE APARECEN LOS REGISTROS YA AGREGADOS -->
+                                                    <hr><br><center><h5>Sus trabajos</h5></center><br>
+                                                    <table class="table table-success m-2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Tipo de gestión</th>
+                                                                <th>Clasificación</th>
+                                                                <th>Evento</th>
+                                                                <th>Tipo de Evento</th>
+                                                                <th>Fecha inicio</th>
+                                                                <th>Fecha fin</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Llenado de ejemplo</td>
+                                                                <td>Llenado de ejemplo</td>
+                                                                <td>Llenado de ejemplo</td>
+                                                                <td>Llenado de ejemplo</td>
+                                                                <td>12-03-2016</td>
+                                                                <td>12-03-2016</td>                                                            
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br><hr><br>
+                                                   
+                                                    <center><a href=""><img src="img/editar.png" width="5%;"></a><p>Editar registro</p></center>
+                                                    <center><a href=""><img src="img/borrar.png" width="7.5%;"></a><p>Borrar registro</p></center>
+                                                                                                  
                                                 </div>
                                             </div>
+
+
+
 
                                             <div class="btn btn-secondary border-white" id="subheader4">
                                                 <a class="btn btn-block" data-toggle="collapse" data-target="#subcollapse4" aria-expanded="true" aria-controls="subcollapse4">Gestión Académica Invididualizada</a>
@@ -276,6 +333,19 @@
             }
 
         };
+
+
+         function validarCapaActa() {
+        
+        var select = $("#CapaActa").val();
+        
+            
+            $('#ventanaCapaActa').load('formularios/estimulos/capa_lenguas_extra.php');
+            return true;
+        }
+
+
+
 
         function validarSeleccionGestionAcademica() {
         
