@@ -5,36 +5,36 @@
     </button>
  </div>
     <div class="modal-body">
-    <form enctype="multipart/form-data" action="#" method="POST">
+    <form enctype="multipart/form-data" action="scripts/formularios/prodep/agregar/produccion/proyectos_investigacion_prodep.php" method="POST">
                                                                       
 
 
 <div class="form-group">
     
    <label for="descripcion" required> Título: </label>
-   <input type="text" class="form-control inst_certi" id="título_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="título_proyecto_investigacion_prodep" placeholder="" required>
    </div>     
 
 <div class="form-group">
     <label for="descripcion" required> Nombre del patrocinador: </label>
-   <input type="text" class="form-control inst_certi" id="patrocinador_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="patrocinador_proyecto_investigacion_prodep" placeholder="" required>
    </div>                  
 
    <div class="form-group">
    <label for="descripcion" required>(Separados por punto y coma)<br>Alumnos participantes:</label>
-   <input type="text" class="form-control inst_certi" id="alumnos_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="alumnos_proyecto_investigacion_prodep" placeholder="" required>
    </div>                                          
 
  <div class="form-group">
    <label for="descripcion" required>Actividades realizadas:</label>
-   <input type="text" class="form-control inst_certi" id="actividades_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="actividades_proyecto_investigacion_prodep" placeholder="" required>
    </div>
 
 
 
 <div class="form-group">
   <label for="cuerpo_proyecto_investigacion_prodep" required>Para considerar en el curriculum de cuerpo académico:</label>
-  <select id="cuerpo_proyecto_investigacion_prodep" class="form-control custom-select" required>
+  <select name="cuerpo_proyecto_investigacion_prodep" class="form-control custom-select" required>
   <option selected value="seleccione">Seleccione...</option>
   <option value="si">Si</option>
   <option value="si">No</option>
@@ -44,36 +44,40 @@
 
 <div class="form-group">
    <label for="descripcion" > (En caso de no haber escribir 0) <br> Miembros: </label>
-   <input type="text" class="form-control inst_certi" id="miembros_proyecto_investigacions_prodep"placeholder="">
+   <input type="text" class="form-control inst_certi" name="miembros_proyecto_investigacions_prodep"placeholder="">
    </div>
 
 
 <div class="form-group">
    <label for="descripcion" >  (En caso de no haber escribir 0) <br> LGACs: </label>
-   <input type="text" class="form-control inst_certi" id="LGAC_proyecto_investigacions_prodep"placeholder="">
+   <input type="text" class="form-control inst_certi" name="LGAC_proyecto_investigacion_prodep"placeholder="">
    </div>
 
 
 
-    <div class="form-group">
-   <label for="descripcion" required> (31/12/9999) <br>Fecha de inicio: </label>
-   <input type="text" class="form-control inst_certi" id="inicio_proyecto_investigacion_prodep" placeholder="" required>
-   </div>       
+   <div class="form-group">
+   <label for="datepicker" class="control-label">Fecha de inicio:</label>
+   <div class="controls">
+   <input type="text" name="fecha_inicio" class="tuiker form-control" required>
+   <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
+</div>
 
- <div class="form-group">
-   <label for="descripcion" required> (31/12/9999) <br>Fecha de fin: </label>
-   <input type="text" class="form-control inst_certi" id="fin_proyecto_investigacion_prodep" placeholder="" required>
-   </div>       
+<div class="form-group">
+   <label for="datepicker" class="control-label">Fecha de fin:</label>
+   <div class="controls">
+   <input type="text" name="fecha_fin" class="tuiker form-control" required>
+   <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
+</div>
 
    <div class="form-group">
    <label for="descripcion" required> Tipo de patrocinador: </label>
-   <input type="text" class="form-control inst_certi" id="tipo_patrocinador_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="tipo_patrocinador_proyecto_investigacion_prodep" placeholder="" required>
    </div>  
 
 
     <div class="form-group">
    <label for="descripcion" required>(Separados por punto y coma)<br>Investigadores participantes:</label>
-   <input type="text" class="form-control inst_certi" id="investigadores_proyecto_investigacion_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="investigadores_proyecto_investigacion_prodep" placeholder="" required>
    </div>        
 
 
@@ -82,3 +86,23 @@
 <br>
 </form>
 </div>
+
+<script type="text/javascript">
+        $('.tuiker').datepicker({
+            //adecuando formato de fecha
+            dateFormat: "yy/mm/dd",
+            //primer dia sea lunes
+            firstDay: 1,
+            //Nombres de los dias
+            dayNames: ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+            //Abreviatura de los dias largos
+            dayNamesMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+            //Escribir los meses
+            monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+            //Abreviatura de los meses
+            monthNamesShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+            onSelect: function(dateText){
+                $('#fecha').val(dateText);
+            }
+        });
+</script>

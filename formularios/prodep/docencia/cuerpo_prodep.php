@@ -5,28 +5,28 @@
     </button>
  </div>
     <div class="modal-body">
-    <form enctype="multipart/form-data" action="#" method="POST">
+    <form enctype="multipart/form-data" action="scripts/formularios/prodep/agregar/docencia/cuerpo_prodep.php" method="POST">
                                                                       
                                                                         
    <div class="form-group">
    <label for="descripcion" >Nombre:</label>
-   <input type="text" class="form-control inst_certi" id="nombre_cuerpo_prodep" placeholder="">
+   <input type="text" class="form-control inst_certi" name="nombre_cuerpo_prodep" placeholder="">
    </div>
 
 <div class="form-group">
     
    <label for="descripcion" >Clave: </label>
-   <input type="text" class="form-control inst_certi" id="clave_cuerpo_prodep" placeholder="">
+   <input type="text" class="form-control inst_certi" name="clave_cuerpo_prodep" placeholder="">
    </div>                                                               
 
  <div class="form-group">
    <label for="descripcion" >Grado de consolación:</label>
-   <input type="text" class="form-control inst_certi" id="grado_cuerpo_prodep" placeholder="">
+   <input type="text" class="form-control inst_certi" name="grado_cuerpo_prodep" placeholder="">
    </div>
 
  <div class="form-group">
    <label for="descripcion" >Lineas que cautiva el cuerpo académico:</label>
-   <input type="text" class="form-control inst_certi" id="linea_cuerpo_prodep" placeholder="">
+   <input type="text" class="form-control inst_certi" name="linea_cuerpo_prodep" placeholder="">
    </div>
 
 
