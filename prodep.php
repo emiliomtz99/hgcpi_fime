@@ -79,10 +79,10 @@
                                               </div>
                                           <div class="col-2">
                                               <!-- BOTON AGREGAR -->
-                                              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario" onclick="validarEstudiosRealizados()">Agregar nuevo</button><br><br>
+                                              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaEst" onclick="validarEstudiosRealizados()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                                 <div class="modal fade" id="ventanaFormulario" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario">
+                                                 <div class="modal fade" id="ventanaEst" tabindex="-1" role="dialog" aria-labelledby="ventanaEstudios">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaEstudios">
                                                       </div>
@@ -119,8 +119,8 @@
                                                     <td><?php echo $mostrar['pais_institucion'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaEst" onclick="editarEstudios(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                     <td><center><button class="btn btn-danger" onclick="borrarEstudios(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -148,10 +148,10 @@
                                           <div class="col-2">
 
                                               <!-- BOTON AGREGAR -->
-                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario2" onclick="validarDatosLaborales()">Agregar nuevo</button><br><br>
+                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaLaborales" onclick="validarDatosLaborales()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaFormulario2" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario2">
+                                              <div class="modal fade" id="ventanaLaborales" tabindex="-1" role="dialog" aria-labelledby="ventanaDatosLaborales">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaDatosLaborales">
                                                       </div>
@@ -189,8 +189,8 @@
                                                     <td><?php echo $mostrar['cronologia'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaLaborales" onclick="editarDatosLaborales(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarDatosLaborales(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -219,10 +219,10 @@
                                           <div class="col-2">
 
                                               <!-- BOTON AGREGAR -->
-                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario3" onclick="validarPremiosProdep()">Agregar nuevo</button><br><br>
+                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventana_Premios" onclick="validarPremiosProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaFormulario3" tabindex="-1" role="dialog" aria-labelledby="ventanaPremios">
+                                              <div class="modal fade" id="ventana_Premios" tabindex="-1" role="dialog" aria-labelledby="ventanaPremios">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaPremios">
                                                       </div>
@@ -260,8 +260,8 @@
                                                     <td><?php echo $mostrar['institucion_que_otorga'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                     <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventana_Premios" onclick="editarPremios(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarPremios(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -308,10 +308,10 @@
                                           <div class="col-2">
 
                                               <!-- BOTON AGREGAR -->
-                                              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario4" onclick="validarDocenciaProdep()">Agregar nuevo</button><br><br>
+                                              <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaDocencia" onclick="validarDocenciaProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaFormulario4" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario3">
+                                              <div class="modal fade" id="ventanaDocencia" tabindex="-1" role="dialog" aria-labelledby="ventanaDocenciaProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaDocenciaProdep">
                                                       </div>
@@ -350,8 +350,8 @@
                                                     <td><?php echo $mostrar['nivel'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaDocencia" onclick="editarDocencia(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                     <td><center><button class="btn btn-danger" onclick="borrarClases(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -393,7 +393,7 @@
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
 
 
-                                                  <div class="modal fade" id="ventanaFormulario5" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario4">
+                                                  <div class="modal fade" id="ventanaFormulario5" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario5">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaFormularioTutoria">
                                                       </div>
@@ -414,11 +414,25 @@
                                                   </tr>
                                               </thead>
                                               <tbody>
+                                                   <?php 
+                                                  $sql="SELECT * FROM detalle_usuario_tutoria WHERE usuario_idusuario='1815906' AND tipo_tutoria='grupal'";
+                                                  $result=mysqli_query($conexion,$sql);
+                                                  while($mostrar=mysqli_fetch_array($result)){
+                                                   ?> <!--ies_solicitud,solicitud,vigencia,estado-->
                                                   <tr>
-                                                      <td>38</td>
-                                                      <td>Licenciatura</td>
-                                                      <td>IEA</td>
-                                                      <td>27/09/2019</td>
+                                                    <td><?php echo $mostrar['numero_estudiantes'] ?></td>
+                                                    <td><?php echo $mostrar['nivel_academico'] ?></td>
+                                                    <td><?php echo $mostrar['programa_educativo'] ?></td>
+                                                    <td><?php echo $mostrar['fecha_de_inicio'] ?></td>
+                                                 
+                                                    <!-- BOTONES EDITAR Y BORRAR -->
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario5" onclick="editarGrupal(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                      <td><center><button class="btn btn-danger" onclick="borrarGrupal(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td></td>
+                                                  </tr>
+                                                <?php 
+                                                }
+                                                ?>
+                                                    
                                               </tbody>
                                           </table>
                                           <br>
@@ -427,19 +441,30 @@
                                           <table class="table table-success m-2">
                                               <thead>
                                                       <th>Alumno:</th>
-                                                      <th>Nivel</th>
-                                                      <th>Programa educativo</th>
-                                                      <th>Fecha de inicio</th>
+                                                      <th>Nivel:</th>
+                                                      <th>Programa educativo:</th>
+                                                      <th>Fecha de inicio:</th>
                                                   </tr>
                                               </thead>
                                               <tbody>
+                                                  <?php 
+                                                  $sql="SELECT * FROM detalle_usuario_tutoria WHERE usuario_idusuario='1815906' AND tipo_tutoria='individual'";
+                                                  $result=mysqli_query($conexion,$sql);
+                                                  while($mostrar=mysqli_fetch_array($result)){
+                                                   ?> <!--ies_solicitud,solicitud,vigencia,estado-->
                                                   <tr>
-                                                      <td>Grupal</td>
-                                                      <td>38</td>
-                                                      <td>Licenciatura</td>
-                                                      <td>IEA</td>
-                                                      <td>27/09/2019</td>
+                                                    <td>PENDIENTE</td>
+                                                    <td><?php echo $mostrar['nivel_academico'] ?></td>
+                                                    <td><?php echo $mostrar['programa_educativo'] ?></td>
+                                                    <td><?php echo $mostrar['fecha_de_inicio'] ?></td>
+                                                
+                                                    <!-- BOTONES EDITAR Y BORRAR -->
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario5" onclick="editarIndividual(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarIndividual(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td></td>
                                                   </tr>
+                                                <?php 
+                                                }
+                                                ?>
                                               </tbody>
                                           </table>
                                           <br><hr><br>
@@ -465,10 +490,10 @@
                                           <div class="col-2">
 
                                               <!-- BOTON AGREGAR -->
-                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaFormulario6" onclick="validarDireccionIndividualProdep()">Agregar nuevo</button><br><br>
+                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaDireccion" onclick="validarDireccionIndividualProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaFormulario6" tabindex="-1" role="dialog" aria-labelledby="ventanaFormulario5">
+                                              <div class="modal fade" id="ventanaDireccion" tabindex="-1" role="dialog" aria-labelledby="ventanaDireccionIndividualProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaDireccionIndividualProdep">
                                                       </div>
@@ -510,8 +535,8 @@
                                                     <td><?php echo $mostrar['numero_estudiantes'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaDireccion" onclick="editarDireccion(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarDireccion(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -545,7 +570,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaGestion" onclick="validarGestionProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaGestion" tabindex="-1" role="dialog" aria-labelledby="ventanaGestion">
+                                              <div class="modal fade" id="ventanaGestion" tabindex="-1" role="dialog"                                  aria-labelledby="ventanaGestionProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaGestionProdep">
                                                      </div>
@@ -592,8 +617,8 @@
                                                     <td><?php echo $mostrar['aprobado'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaGestion" onclick="editarGestion(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                     <td><center><button class="btn btn-danger" onclick="borrarGestion(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -624,7 +649,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaLGAC" onclick="validarLGACProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaLGAC" tabindex="-1" role="dialog" aria-labelledby="ventanaLGAC">
+                                              <div class="modal fade" id="ventanaLGAC" tabindex="-1" role="dialog" aria-labelledby="ventanaLGACProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaLGACProdep">
                                                      </div>
@@ -658,8 +683,8 @@
                                                     <td><?php echo $mostrar['horas_semana_dedicadas'] ?></td>
                                                    
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                     <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaLGAC" onclick="editarlgac(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarLGAC(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -690,7 +715,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaCuerpo" onclick="validarCuerpoProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaCuerpo" tabindex="-1" role="dialog" aria-labelledby="ventanaCuerpo">
+                                              <div class="modal fade" id="ventanaCuerpo" tabindex="-1" role="dialog" aria-labelledby="ventanaCuerpoProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaCuerpoProdep">
                                                      </div>
@@ -726,8 +751,9 @@
                                                     <td><?php echo $mostrar['linea_cultiva_cuerpo_academico'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaCuerpo" onclick="editarCuerpo(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+
+                                                    <td><center><button class="btn btn-danger" onclick="borrarCuerpo(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -758,7 +784,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaProgramaEducativo" onclick="validarProgramaEducativoProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaProgramaEducativo" tabindex="-1" role="dialog" aria-labelledby="ventanaProgramaEducativo">
+                                              <div class="modal fade" id="ventanaProgramaEducativo" tabindex="-1" role="dialog" aria-labelledby="ventanaProgramaEducativoProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaProgramaEducativoProdep">
                                                      </div>
@@ -799,8 +825,8 @@
                                                     <td><?php echo $mostrar['en_que_consiste_actualizacion'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                     <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaProgramaEducativo" onclick="editarprogramas(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarPrograma(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -846,7 +872,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaArticulo" onclick="validarArticuloProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaArticulo" tabindex="-1" role="dialog" aria-labelledby="ventanaArticulo">
+                                              <div class="modal fade" id="ventanaArticulo" tabindex="-1" role="dialog" aria-labelledby="ventanaArticuloProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaArticuloProdep">
                                                       </div>
@@ -889,15 +915,15 @@
                                                   while($mostrar=mysqli_fetch_array($result)){
                                                    ?> <!--ies_solicitud,solicitud,vigencia,estado-->
                                                   <tr>
-                                                    <td>PENDIENTE</td>
+                                                    <td><?php echo $mostrar['autores'] ?></td>
                                                     <td><?php echo $mostrar['nombre_art'] ?></td>
                                                     <td><?php echo $mostrar['estado_art'] ?></td>
                                                     <td><?php echo $mostrar['nombre_revista'] ?></td>
                                                     <td><?php echo $mostrar['pais'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                       <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaArticulo" onclick="editarArticulo(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarArticulo(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -976,15 +1002,15 @@
                                                   while($mostrar=mysqli_fetch_array($result)){
                                                    ?> <!--ies_solicitud,solicitud,vigencia,estado-->
                                                   <tr>
-                                                    <td>PENDIENTE</td>
+                                                    <td><?php echo $mostrar['autores'] ?></td>
                                                     <td><?php echo $mostrar['titulo'] ?></td>
                                                     <td><?php echo $mostrar['estado_actual'] ?></td>
                                                     <td><?php echo $mostrar['editorial'] ?></td>
                                                     <td><?php echo $mostrar['pais'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaLibro" onclick="editarLibros(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarLibro(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -1016,7 +1042,7 @@
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaMemorias" onclick="validarMemoriasProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaMemorias" tabindex="-1" role="dialog" aria-labelledby="ventanaMemoriasProdep">
+                                              <div class="modal fade" id="ventanaMemorias" tabindex="-1" role="dialog" aria-labelledby="ventanaMemorias">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaMemoriasProdep">
                                                      </div>
@@ -1060,15 +1086,14 @@
                                                    ?> <!--ies_solicitud,solicitud,vigencia,estado-->
                                                   <tr>
                                                     <td><?php echo $mostrar['autores_colaboradores'] ?></td>
-                                                    <td><?php echo $mostrar['titulo'] ?></td>
+                                                    <td><?php echo $mostrar['titulo_de_obra'] ?></td>
                                                     <td><?php echo $mostrar['congreso_donde_se_presento'] ?></td>
                                                      <td><?php echo $mostrar['pais'] ?></td>
                                                     <td>PENDIENTE!!</td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
-                                                  </tr>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaMemorias" onclick="editarMemorias(<?php echo $mostrar['id'] ?>)">Editar</button></center></td>
+                                                   <td><center><button class="btn btn-danger" onclick="borrarMemorias(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                 <?php 
                                                 }
                                                 ?>
@@ -1150,8 +1175,8 @@
                                                     
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaInvestigacion" onclick="editarInvestigacion(<?php echo $mostrar['id'] ?>)">Editar</button></center></td>
+                                                     <td><center><button class="btn btn-danger" onclick="borrarProyectos(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -1209,10 +1234,10 @@
                                           <div class="col-2">
 
                                               <!-- BOTON AGREGAR -->
-                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaPromep" onclick="validarPromepProdep()">Agregar nuevo</button><br><br>
+                                          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventana_Promep" onclick="validarPromepProdep()">Agregar nuevo</button><br><br>
 
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
-                                              <div class="modal fade" id="ventanaPromep" tabindex="-1" role="dialog" aria-labelledby="ventanaPromep">
+                                              <div class="modal fade" id="ventana_Promep" tabindex="-1" role="dialog" aria-labelledby="ventanaPromepProdep">
                                                   <div class="modal-dialog">
                                                       <div class="modal-content" id="ventanaPromepProdep">
                                                       </div>
@@ -1250,8 +1275,10 @@
                                                     <td><?php echo $mostrar['estado'] ?></td>
                                                  
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventana_Promep" onclick="editarPromep(<?php echo $mostrar['id']?>)">Editar</button></center></td>
+
+                                                   <td><center><button class="btn btn-danger" onclick="borrarPromep(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -1263,6 +1290,9 @@
 
                                       </div>
                                   </div>
+
+
+
 
 
 
@@ -1283,6 +1313,10 @@
                                               <!-- BOTON AGREGAR -->
                                           <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ventanaExternoPromep" onclick="validarExternoPromepProdep()">Agregar nuevo</button><br><br>
 
+
+
+
+
                                               <!-- VENTANA PARA LOS FORMULARIOS -->
                                               <div class="modal fade" id="ventanaExternoPromep" tabindex="-1" role="dialog" aria-labelledby="ventanaExternoPromep">
                                                   <div class="modal-dialog">
@@ -1293,6 +1327,7 @@
                                               </div>
 
                                           </div>
+
 
                                           <!-- TABLAS DONDE APARECEN LOS REGISTROS YA AGREGADOS -->
                                           <hr><br><center><h5>Beneficios externos a PROMEP</h5></center><br>
@@ -1323,8 +1358,8 @@
                                                     <td><?php echo $mostrar['fecha_fin'] ?></td>
                                                     <td><?php echo $mostrar['monto'] ?></td>
                                                     <!-- BOTONES EDITAR Y BORRAR -->
-                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaFormulario" onclick="">Editar</button></center></td>
-                                                    <td><center><button class="btn btn-danger" onclick="">Eliminar</button></center></td>
+                                                    <td><center><button class="btn btn-warning" data-toggle="modal" data-target="#ventanaExternoPromep" onclick="editarExternos(<?php echo $mostrar['id'] ?>)">Editar</button></center></td>
+                                                    <td><center><button class="btn btn-danger" onclick="borrarExternos(<?php echo $mostrar['id'] ?>)">Eliminar</button></center></td>
                                                   </tr>
                                                 <?php 
                                                 }
@@ -1367,6 +1402,8 @@
         });
 
         <?php include("scripts/formularios/prodep/validadoresFormulariosProdep.php");?>
+        <?php include("scripts/formularios/prodep/validadoresBorrarProdep.php");?>
+        <?php include("scripts/formularios/prodep/validadoresEditarProdep.php");?>
 
     </script>
 </body>
