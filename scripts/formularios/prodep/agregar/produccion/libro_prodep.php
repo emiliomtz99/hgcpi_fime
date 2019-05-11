@@ -21,13 +21,14 @@ $editorial = $_POST["editorial_libro_prodep"];
 $edicion = $_POST["ediciones_libro_prodep"];
 $total_ejemplares = $_POST["ejemplares_libro_prodep"];
 $considerar_curriculum = $_POST["cuerpo_libro_prodep"];
+$autores = $_POST["autores_libro_prodep"];
 $miembros = $_POST["miembros_libros_prodep"];
 $lgacs = $_POST["LGAC_libros_prodep"];
 $idusuario = "1815906";
 
 $consulta = "INSERT INTO detalle_usuario_produccion_libros /* tabla de destino */
-(proposito,isbn,titulo,tipo_participacion,estado_actual,pais,ano_publicacion,editorial,edicion,total_ejemplares,considerar_curriculum,miembros,lgacs,usuario_idusuario) /* campos de destino, en el MISMO ORDEN que aparecen en la base de datos */
-VALUES ('$proposito','$isbn','$titulo','$tipo_participacion','$estado_actual','$pais','$ano_publicacion','$editorial','$edicion','$total_ejemplares','$considerar_curriculum','$miembros','$lgacs','$idusuario')"; /* valores a insertar en los campos de destino */
+(proposito,isbn,titulo,tipo_participacion,estado_actual,pais,ano_publicacion,editorial,edicion,total_ejemplares,considerar_curriculum,miembros,autores,lgacs,usuario_idusuario) /* campos de destino, en el MISMO ORDEN que aparecen en la base de datos */
+VALUES ('$proposito','$isbn','$titulo','$tipo_participacion','$estado_actual','$pais','$ano_publicacion','$editorial','$edicion','$total_ejemplares','$considerar_curriculum','$miembros','$autores','$lgacs','$idusuario')"; /* valores a insertar en los campos de destino */
 
 if ($resultado = $mysqli->query($consulta)) {
     header("Location: ../../../../../prodep.php"); //regresar a la convocatoria actual

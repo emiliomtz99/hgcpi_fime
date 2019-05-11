@@ -11,8 +11,8 @@ if (mysqli_connect_errno()) {
 /* RECIBIR LAS VARIABLES DESDE EL FORMULARIO */ 
 $tipo_tutoria = "grupal";
 $nivel_academico = $_POST["nivel_tutoria_grupal_prodep"];
-$programa_educativo = $_POST["programa_tutoria_grupal_prodep"];
-$numero_estudiantes = $_POST["no_alumno_tutoria_grupal_prodep"];
+$programa_educativo = $_POST["no_alumno_tutoria_grupal_prodep"];
+$numero_estudiantes = $_POST["nivel_tutoria_grupal_prodep"];
 $fecha_de_inicio = $_POST["fecha_ini_tutoria_grupal"];
 $idusuario = "1815906";
 
