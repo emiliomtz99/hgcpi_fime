@@ -5,12 +5,12 @@
     </button>
  </div>
     <div class="modal-body">
-    <form enctype="multipart/form-data" action="#" method="POST">
+    <form enctype="multipart/form-data" action="scripts/formularios/prodep/agregar/docencia/tutoria_individual_prodep.php" method="POST">
                                                                       
                                                                         
    <div class="form-group">
    <label for="descripcion" required>(Mayúsculas) <br>Alumno:</label>
-   <input type="text" class="form-control inst_certi" name="alumno_tutoria_individual_prodep" placeholder="" required>
+   <input type="text" class="form-control inst_certi" name="alumno" placeholder="" required>
    </div>
 
 <div class="form-group">
@@ -27,14 +27,14 @@
 <div class="form-group">
    <label for="datepicker" class="control-label">Fecha de inicio:</label>
    <div class="controls">
-   <input type="text" name="fecha" class="tuiker form-control" required>
+   <input type="text" name="fecha_ini_tutoria_individual" class="tuiker form-control" required>
    <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
 </div>                                                      
 
 <div class="form-group">
    <label for="datepicker" class="control-label">Fecha de fin:</label>
    <div class="controls">
-   <input type="text" name="fecha" class="tuiker form-control" required>
+   <input type="text" name="fecha_fin_tutoria_individual" class="tuiker form-control" required>
    <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
 </div>                                                         
 

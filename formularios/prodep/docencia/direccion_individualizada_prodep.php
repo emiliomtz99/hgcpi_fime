@@ -23,11 +23,7 @@
    <label for="descripcion" required>(Mayúsculas) <br> Dependencia de educación superior</label>
    <input type="text" class="form-control inst_certi" name="dependencia_docencia_prodep" placeholder="" required>
    </div>
-
-<div class="form-group">
-   <label for="descripcion" required> (Mayúsculas) <br> Programa educativo </label>
-   <input type="text" class="form-control inst_certi" name="programa_educativo_docencia_prodep" placeholder="" required>
-   </div>                                                           
+                                        
 
 <div class="form-group">
    <label for="datepicker" class="control-label">Fecha de inicio:</label>

@@ -85,13 +85,13 @@
 
 <div class="form-group">
    <label for="descripcion" > (En caso de no haber escribir 0) <br> Miembros: </label>
-   <input type="text" class="form-control inst_certi" name="miembros_memoriass_prodep"placeholder="">
+   <input type="text" class="form-control inst_certi" name="miembros_memorias_prodep"placeholder="">
    </div>
 
 
 <div class="form-group">
    <label for="descripcion" >  (En caso de no haber escribir 0) <br> LGACs: </label>
-   <input type="text" class="form-control inst_certi" name="LGAC_memoriass_prodep"placeholder="">
+   <input type="text" class="form-control inst_certi" name="LGAC_memorias_prodep"placeholder="">
    </div>
 
 <br>

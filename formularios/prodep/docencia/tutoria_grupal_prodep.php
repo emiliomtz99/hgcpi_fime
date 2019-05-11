@@ -29,7 +29,7 @@
    <div class="controls">
    <input type="text" name="fecha_ini_tutoria_grupal" class="tuiker form-control" required>
    <label for="datepicker" class="input-group-addon generic_btn"><i class="fa fa-calendar" aria-hidden="true"></i></label>    
-</div>
+</div>         
                                                                     <br>
 <center><input class="btn btn-dark btn-lg" type="submit" value="Agregar"></center>
 <br>
