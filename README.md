@@ -1,5 +1,5 @@
 # HGCPI FIME UANL #
-Repositorio del proyecto HGCPI para la FIME UANL
+Repositorio del proyecto HGCPI para la FIME UANL. Proyecto para ayudar a Docentes-Investigadores al facil llenado de convocatorias de deistintas dependencias de gobierno.
 
 # Control de Versiones #
 
